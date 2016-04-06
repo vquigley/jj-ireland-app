@@ -1,0 +1,6 @@
+@import "variables";
+
+md-toolbar {
+  height: $menuHeight + $menuIconOffset + $menuIconOffset;
+  padding-left: $menuHeight + $menuIconOffset + $menuIconOffset;
+}
