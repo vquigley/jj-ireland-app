@@ -1,6 +1,6 @@
+import angular from 'angular';
 
-
-export default function routes($stateProvider, $urlRouterProvider) {  
+angular.module("app").config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {  
   $urlRouterProvider.otherwise("/home");
 
   $stateProvider
@@ -44,4 +44,4 @@ export default function routes($stateProvider, $urlRouterProvider) {
         parent: 'LearnBelts'
       }
     });
-}
+}]);

@@ -11,9 +11,6 @@ require('angular-breadcrumb');
 // Other vendor dependencies
 require("font-awesome-webpack");
 
-// Local requires
-import routes from './routes';
-
 // CSS dependencies
 
 // Vendor
@@ -25,8 +22,10 @@ import '../styles/app.scss';
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, ['ui.bootstrap', "ui.router", 'ngAnimate', 'ngMaterial', 'ncy-angular-breadcrumb'])
-  .config(routes);
+angular.module(MODULE_NAME, ['ui.bootstrap', "ui.router", 'ngAnimate', 'ngMaterial', 'ncy-angular-breadcrumb']);
+
+// Local requires
+require('./routes');
 
 // Custom angular objects. Must be required after angular app is defined.
 require('./learn/learnBeltsController');
