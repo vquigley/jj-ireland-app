@@ -57,7 +57,9 @@ module.exports = function makeWebpackConfig () {
 
     // Filename for non-entry points
     // Only adds hash in build mode
-    chunkFilename: isProd ? '[name].[hash].js' : '[name].bundle.js'
+    chunkFilename: isProd ? '[name].[hash].js' : '[name].bundle.js',
+    
+    context: isProd ? '/wjjf-ireland-app/' : ''
   };
 
   /**
