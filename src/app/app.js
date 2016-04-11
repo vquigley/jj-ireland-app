@@ -31,7 +31,9 @@ require('./routes');
 require('./learn/learnBeltsController');
 require('./learn/learnSyllabusController');
 require('./directives/sidenav/sidenav');
+require('./directives/imgPreload');
 require('./services/syllabus');
 require('./services/common');
+
 
 export default MODULE_NAME;
