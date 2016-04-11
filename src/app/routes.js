@@ -12,7 +12,7 @@ angular.module("app").config(['$stateProvider', '$urlRouterProvider', function (
       }
     })
     .state('LearnStart', {
-      url: "/learnStart",
+      url: "/learn/start",
       template: require('./learn/learnStart.html'),
       ncyBreadcrumb: {
         label: 'Learn',
