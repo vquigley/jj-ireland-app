@@ -10,38 +10,5 @@ angular.module("app").config(['$stateProvider', '$urlRouterProvider', function (
       ncyBreadcrumb: {
         label: 'Home'
       }
-    })
-    .state('LearnStart', {
-      url: "/learn/start",
-      template: require('./learn/learnStart.html'),
-      ncyBreadcrumb: {
-        label: 'Learn',
-        parent: 'Home'
-      }
-    })
-    .state('LearnBelts', {
-      url: "/learn/belts",
-      template: require('./learn/learnBelts.html'),
-      ncyBreadcrumb: {
-        label: 'Belts',
-        parent: 'LearnStart'
-      }
-    })
-    .state('LearnSyllabus', {
-      url: "/learn/syllabus",
-      template: require('./learn/learnSyllabus.html'),
-      controller: 'LearnSyllabus',
-      ncyBreadcrumb: {
-        label: '{{current}}',
-        parent: 'LearnBelts'
-      }
-    }).state('LearnFinish', {
-      url: "/learn/finish",
-      template: require('./learn/learnFinish.html'),
-      controller: 'LearnBelts',
-      ncyBreadcrumb: {
-        label: 'Finish',
-        parent: 'LearnBelts'
-      }
     });
 }]);

@@ -3,31 +3,37 @@
   "items" : [
     {
       "img":"img/answers/humerus.png",
+      "imgQuestion" : "img/questions/humerus.png",
       "value":"Humerus",
       "description":"The humerus is a long bone in the arm or forelimb that runs from the shoulder to the elbow."
     },
     {
       "img":"img/answers/radius.png",
+      "imgQuestion" : "img/questions/radius.png",
       "value":"Radius",
       "description":"The radius or radial bone is one of the two large bones of the forearm. It extends from the lateral side of the elbow to the thumb side of the wrist."
     },
     {
       "img":"img/answers/ulna.png",
+      "imgQuestion" : "img/questions/ulna.png",
       "value":"Ulna",
       "description":"The ulna is one of the two long bones in the forearm. It is on the side opposite the thumb and extends from the elbow to the wrist."
     },
     {
       "img":"img/answers/carpals.png",
+      "imgQuestion" : "img/questions/carpals.png",
       "value":"Carpals",
       "description":"The carpal bones are the eight small bones that make up the wrist (or carpus) that connects the hand to the forearm."
     },
     {
       "img":"img/answers/metacarpals.png",
+      "imgQuestion" : "img/questions/metacarpals.png",
       "value":"Metacarpals",
       "description":"The metacarpal bones form the intermediate part of the skeletal hand located between the phalanges of the fingers and the carpal bones of the wrist."
     },
     {
       "img":"img/answers/phalanges.png",
+      "imgQuestion" : "img/questions/phalanges.png",
       "value":"Phalanges",
       "description":"The phalanges are the bones that make up the fingers of the hand and the toes of the foot. There are 56 phalanges in the human body, with fourteen on each hand and foot. Three phalanges are present on each finger and toe, with the exception of the thumb and large toe, which possess only two."
     }

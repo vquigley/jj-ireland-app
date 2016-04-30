@@ -26,11 +26,9 @@ angular.module(MODULE_NAME, ['ui.bootstrap', "ui.router", 'ngAnimate', 'ngMateri
 
 // Local requires
 require('./routes');
-
-// Custom angular objects. Must be required after angular app is defined.
-require('./learn/learnBeltsController');
-require('./learn/learnSyllabusController');
-require('./directives/sidenav/sidenav');
+require('./learn/routes')
+require('./play/routes')
+require('./directives/belts/belts');
 require('./directives/imgPreload');
 require('./services/syllabus');
 require('./services/common');

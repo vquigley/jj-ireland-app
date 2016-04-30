@@ -1,5 +1,4 @@
-<div ng-controller="LearnSyllabus as vm" ng-cloak="" ng-init="vm.init()" class="container-fluid" >
-  <ncy-breadcrumb class="row"></ncy-breadcrumb>
+<div ng-controller="LearnSyllabus as vm" ng-init="vm.init()">
   <h3 class="col-md-12 "><u>{{vm.itemHeading}}</u></h3>
   <img class="img-responsive col-lg-3 col-md-4 col-sm-4 col-xs-12 fade" img-preload ng-src="{{vm.item.img}}">
     
@@ -11,6 +10,5 @@
     <div class="h2 center-block ">{{vm.item.value}}</div>
     <div class="">{{vm.item.description}}</div>
     <button class="top-buffer bottom-buffer btn btn-primary btn-lg col-xs-10 col-sm-10 col-md-4" ng-click="vm.next()">Next</button>
-
   </div>  
-  </div>
+ </div>
