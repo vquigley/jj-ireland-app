@@ -25,6 +25,7 @@ angular.module("app")
   vm.init = init;
   vm.questionData = [];
   vm.answers = [];
+  vm.answer = answer;
   vm.answerState = "none";
   vm.next = next;
   vm.showAnswer = showAnswer;
