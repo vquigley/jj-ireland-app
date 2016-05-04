@@ -22,7 +22,6 @@ angular.module("app")
   let vm = this;
   vm.itemHeading  = "";
   vm.item = {};
-  vm.answer = answer;
   vm.init = init;
   vm.questionData = [];
   vm.answers = [];
@@ -63,8 +62,8 @@ angular.module("app")
       })
     });
     
-    vm.questionData = shuffleArray(vm.questionData);
-    vm.answers = shuffleArray(vm.answers);
+    vm.questionData = common.shuffleArray(vm.questionData);
+    vm.answers = common.shuffleArray(vm.answers);
   }
   
   function getRequestedBelts() {
@@ -118,16 +117,6 @@ angular.module("app")
   
   function wrongAnswer(ev) {
     vm.answerState = "incorrect";
-  }
-  
-  function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
-    return array;
   }
   
   function next() {

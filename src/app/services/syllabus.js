@@ -13,14 +13,6 @@ angular.module("app").factory('syllabus', ['$q', function ($q) {
           name:"White",
           color:"white",
           id:"white"
-        },{
-          name:"Yellow",
-          color:"Yellow",
-          id:"yellow"
-        },{
-          name:"Orange",
-          color:"orange",
-          id:"orange"
         }]
       );
     });

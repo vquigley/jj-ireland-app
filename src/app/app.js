@@ -28,6 +28,7 @@ angular.module(MODULE_NAME, ['ui.bootstrap', "ui.router", 'ngAnimate', 'ngMateri
 require('./routes');
 require('./learn/routes')
 require('./play/routes')
+require('./test/routes')
 require('./directives/belts/belts');
 require('./directives/imgPreload');
 require('./services/syllabus');
