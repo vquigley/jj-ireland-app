@@ -1,6 +1,24 @@
 import angular from 'angular';
 
-angular.module("app").controller('PlaySyllabus', ['syllabus', 'common', '$scope', '$location', '$q', function (syllabus, common, $scope, $location, $q) {
+angular.module("app")
+  .controller(
+    'PlaySyllabus', 
+    ['syllabus', 
+     'common', 
+     '$scope', 
+     '$location', 
+     '$q', 
+     '$mdMedia', 
+     '$mdDialog',     
+     function (
+       syllabus, 
+       common, 
+       $scope, 
+       $location, 
+       $q, 
+       $mdMedia, 
+       $mdDialog) {
+         
   let vm = this;
   vm.itemHeading  = "";
   vm.item = {};
@@ -8,20 +26,26 @@ angular.module("app").controller('PlaySyllabus', ['syllabus', 'common', '$scope'
   vm.init = init;
   vm.questionData = [];
   vm.answers = [];
+  vm.answerState = "none";
+  vm.next = next;
+  vm.showAnswer = showAnswer;
+  vm.itemIndex = 0;
   
   function init() {
     loadQuestionData();
-    loadNextItem();
+    loadItem();
   }
   
   function loadQuestionData() {
     let belts = getRequestedBelts();
-    
+
     belts.forEach (function (belt) {
       let beltData = loadBelt(belt);
 
       beltData.forEach(function (section) {
+
         section.items.forEach(function (item) {
+
           var copy = item; // This may not be the right approach.
           copy.color = belt;
           copy.title = section.title;
@@ -51,8 +75,10 @@ angular.module("app").controller('PlaySyllabus', ['syllabus', 'common', '$scope'
     return syllabus.get(belt);
   }
   
-  function loadNextItem() {
-    vm.item = vm.questionData[0];
+  function loadItem() {    
+    vm.answerState = "none";
+    vm.selected = "";
+    vm.item = vm.questionData[vm.itemIndex];
   }
   
   function finish(){
@@ -86,12 +112,12 @@ angular.module("app").controller('PlaySyllabus', ['syllabus', 'common', '$scope'
     }
   }
   
-  function correctAnswer() {
-    
+  function correctAnswer(ev) {
+    vm.answerState = "correct";
   }
   
-  function wrongAnswer() {
-    
+  function wrongAnswer(ev) {
+    vm.answerState = "incorrect";
   }
   
   function shuffleArray(array) {
@@ -102,5 +128,26 @@ angular.module("app").controller('PlaySyllabus', ['syllabus', 'common', '$scope'
       array[j] = temp;
     }
     return array;
+  }
+  
+  function next() {
+    if (++vm.itemIndex >= vm.questionData.length)
+      return finish();
+      
+    loadItem();
+  }
+  
+  function showAnswer() {
+    
+    let answer = ""
+    if (vm.item.type === "translation") {
+      answer = vm.questionData[vm.itemIndex].japanese;
+    }
+    else {
+      answer = vm.questionData[vm.itemIndex].value;
+    }
+    
+    vm.answerState='correct'
+    vm.selected = vm.answers[vm.answers.indexOf(answer)];
   }
 }]);
