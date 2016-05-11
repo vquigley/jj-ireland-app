@@ -1,6 +1,6 @@
 <h3 class="text-center"><u>Select Belts</u></h3>
 <md-list-item ng-repeat="item in belts" class="col-sm-12 col-md-6 col-md-offset-3">
-<md-button class="md-fab" style="background-color: {{item.color}}" aria-label="{{item.name}}"></md-button>
+<md-button class="md-fab" style="background-color: {{item.color}}" aria-label="{{item.name}}" ng-click="item.selected = !item.selected"></md-button>
 <p>
     <h3>{{ item.name }}</h3>
 </p>
