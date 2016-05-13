@@ -8,13 +8,13 @@
       <span ng-show="vm.item.type === 'translation'">What is Japanese for <i>{{vm.item.english}}</i>?</span>
     </div>
     
-    <select name="options" ng-change="vm.answerState='none'" required class="col-xs-10 col-sm-10 col-md-4" ng-model="vm.selected">
+    <select name="options" ng-change="vm.answerState='none'" required class="col-xs-10 col-sm-10 col-md-7 col-lg-7"  ng-model="vm.selected">
       <option value="" disabled selected><i>Select</i></option>
       <option ng-repeat="option in vm.answers" value="{{option}}">{{option}}</option>
     </select>
     <div class="col-xs-10 col-sm-10 col-md-4" ng-show="vm.answerState==='incorrect'">Sorry this is wrong. <a style="cursor:pointer;" ng-click="vm.showAnswer()">Show answer.</a></div>
-    <button class="top-buffer bottom-buffer btn btn-primary btn-lg col-xs-10 col-sm-10 col-md-4" ng-click="vm.answer()" ng-show="vm.answerState==='none'">Submit</button>
-    <button class="top-buffer bottom-buffer btn btn-success btn-lg col-xs-10 col-sm-10 col-md-4" ng-click="vm.next()" ng-show="vm.answerState==='correct'">✓ Continue</button>
-    <button class="top-buffer bottom-buffer btn btn-danger btn-lg col-xs-10 col-sm-10 col-md-4" ng-click="vm.answer()" ng-show="vm.answerState==='incorrect'">✘ Try Again</button>
+    <button class="top-buffer bottom-buffer btn btn-primary btn-lg col-xs-10 col-sm-10 col-md-7 col-lg-7" ng-click="vm.answer()" ng-show="vm.answerState==='none'">Submit</button>
+    <button class="top-buffer bottom-buffer btn btn-success btn-lg col-xs-10 col-sm-10 col-md-7 col-lg-7" ng-click="vm.next()" ng-show="vm.answerState==='correct'">✓ Continue</button>
+    <button class="top-buffer bottom-buffer btn btn-danger btn-lg col-xs-10 col-sm-10 col-md-7 col-lg-7" ng-click="vm.answer()" ng-show="vm.answerState==='incorrect'">✘ Try Again</button>
   </div>  
 </div>
