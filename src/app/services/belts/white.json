@@ -2,39 +2,39 @@
   "title": "Anatomy - Bones of the Arm",
   "items" : [
     {
-      "img":"img/answers/humerus.png",
-      "imgQuestion" : "img/questions/humerus.png",
+      "img":"img/white/answers/humerus.png",
+      "imgQuestion" : "img/white/questions/humerus.png",
       "value":"Humerus",
       "description":"The humerus is a long bone in the arm or forelimb that runs from the shoulder to the elbow."
     },
     {
-      "img":"img/answers/radius.png",
-      "imgQuestion" : "img/questions/radius.png",
+      "img":"img/white/answers/radius.png",
+      "imgQuestion" : "img/white/questions/radius.png",
       "value":"Radius",
       "description":"The radius or radial bone is one of the two large bones of the forearm. It extends from the lateral side of the elbow to the thumb side of the wrist."
     },
     {
-      "img":"img/answers/ulna.png",
-      "imgQuestion" : "img/questions/ulna.png",
+      "img":"img/white/answers/ulna.png",
+      "imgQuestion" : "img/white/questions/ulna.png",
       "value":"Ulna",
       "description":"The ulna is one of the two long bones in the forearm. It is on the side opposite the thumb and extends from the elbow to the wrist."
     },
     {
-      "img":"img/answers/carpals.png",
-      "imgQuestion" : "img/questions/carpals.png",
+      "img":"img/white/answers/carpals.png",
+      "imgQuestion" : "img/white/questions/carpals.png",
       "value":"Carpals",
       "description":"The carpal bones are the eight small bones that make up the wrist (or carpus) that connects the hand to the forearm."
     },
     {
-      "img":"img/answers/metacarpals.png",
-      "imgQuestion" : "img/questions/metacarpals.png",
+      "img":"img/white/answers/metacarpals.png",
+      "imgQuestion" : "img/white/questions/metacarpals.png",
       "value":"Metacarpals",
       "description":"The metacarpal bones form the intermediate part of the skeletal hand located between the phalanges of the fingers and the carpal bones of the wrist."
     },
     {
-      "img":"img/answers/phalanges.png",
-      "imgQuestion" : "img/questions/phalanges.png",
-      "value":"Phalanges",
+      "img":"img/white/answers/phalanges.png",
+      "imgQuestion" : "img/white/questions/phalanges.png",
+      "value":"Phalanges (Hand)",
       "description":"The phalanges are the bones that make up the fingers of the hand and the toes of the foot. There are 56 phalanges in the human body, with fourteen on each hand and foot. Three phalanges are present on each finger and toe, with the exception of the thumb and large toe, which possess only two."
     }
   ]
@@ -44,35 +44,35 @@
   "items": [
     {
       "type" : "translation",
-      "img":"img/tatami.jpg",
+      "img":"img/white/tatami.jpg",
       "english":"Mat",
       "japanese": "Tatami",
       "description":"A tatami is a type of mat used as a flooring material in traditional Japanese-style rooms."
     },
      {
       "type" : "translation",
-      "img":"img/sensi.png",
+      "img":"img/white/sensi.png",
       "english":"Teacher",
       "japanese": "Sensei",
       "description":"Sensei is a Japanese honorific and word that is literally translated as 'person born before another'. In general usage, it is used, with proper form, after a person's name, and means 'teacher'"
     },
      {
       "type" : "translation",
-      "img":"img/belts.gif",
+      "img":"img/white/belts.gif",
       "english":"Belt",
       "japanese": "Obi",
       "description":"Belt worn by students of Ju Jitsu."
     },
      {
       "type" : "translation",
-      "img":"img/bow.gif",
+      "img":"img/white/bow.gif",
       "english":"Bow",
       "japanese": "Rei",
       "description":"A sign of respect before and after every contest or training session, students must bow to one another and to their teacher. This bow is part of the Dojo etiquette and should be observed whenever martial arts training is taking place."
     },
      {
       "type" : "translation",
-      "img":"img/ju-jitsu.gif",
+      "img":"img/white/ju-jitsu.gif",
       "english":"Gentle Art",
       "japanese": "Ju-Jitsu",
       "description":"Ju-Jitsu means gentle art and represents manipulating the opponent's force against himself rather than confronting it with one's own force."

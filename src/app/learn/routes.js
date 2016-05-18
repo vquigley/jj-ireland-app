@@ -26,7 +26,7 @@ angular.module("app").config(['$stateProvider', '$urlRouterProvider', function (
       template: require('./learnSyllabus.html'),
       controller: "LearnSyllabus",
       ncyBreadcrumb: {
-        label: '{{current}}',
+        label: 'Selected Belts',
         parent: 'LearnBelts'
       }
     }).state('LearnFinish', {

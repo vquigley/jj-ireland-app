@@ -1,0 +1,77 @@
+[{
+  "title": "Anatomy - Bones of the Leg",
+  "items" : [
+    {
+      "img":"img/yellow/answers/femur.png",
+      "imgQuestion" : "img/yellow/questions/femur.png",
+      "value":"Femur",
+      "description":"The femur, also known as the thighbone, is the longest and thickest bone in the body and goes from your pelvis to your knee."
+    },
+    {
+      "img":"img/yellow/answers/patella.png",
+      "imgQuestion" : "img/yellow/questions/patella.png",
+      "value":"Patella",
+      "description":"Also known as the kneecap is a small flat triangular bone in front of the knee that protects the knee joint."
+    },
+    {
+      "img":"img/yellow/answers/tibia.png",
+      "imgQuestion" : "img/yellow/questions/tibia.png",
+      "value":"Tibia",
+      "description":"The inner and thicker of the two bones of the human leg between the knee and ankle."
+    },
+    {
+      "img":"img/yellow/answers/fibula.png",
+      "imgQuestion" : "img/yellow/questions/fibula.png",
+      "value":"Fibula",
+      "description":"The outer and thinner of the two bones of the human leg between the knee and ankle."
+    },
+    {
+      "img":"img/yellow/answers/tarsals.png",
+      "imgQuestion" : "img/yellow/questions/tarsals.png",
+      "value":"Tarsals",
+      "description":"The tarsals are a cluster of seven articulating bones in each foot situated between the lower end of tibia and fibula of the lower leg and the metatersals"
+    },
+    {
+      "img":"img/yellow/answers/metatarsals.png",
+      "imgQuestion" : "img/yellow/questions/metatarsals.png",
+      "value":"Metatarsals",
+      "description":"The metatarsal bones are a group of five long bones in the foot, located between the tarsal bones of the hind- and mid-foot and the phalanges of the toes."
+    },
+    {
+      "img":"img/yellow/answers/phalanges.png",
+      "imgQuestion" : "img/yellow/questions/phalanges.png",
+      "value":"Phalanges (Foot)",
+      "description":"The phalanges are the bones that make up the fingers of the hand and the toes of the foot. There are 56 phalanges in the human body, with fourteen on each hand and foot. Three phalanges are present on each finger and toe, with the exception of the thumb and large toe, which possess only two."
+    }
+  ]
+}, 
+{
+  "title": "Japanese Terminology",
+  "items": [
+    {
+      "type" : "translation",
+      "img":"img/yellow/attack.jpg",
+      "english":"Attack",
+      "japanese": "Ate",
+      "description":"To try to hurt or defeat using violence."
+    },{
+      "type" : "translation",
+      "img":"img/yellow/martial-art.jpg",
+      "english":"Martial Art",
+      "japanese": "Bu-Jitsu",
+      "description":"Martial arts are codified systems and traditions of combat practices, which are practiced for a variety of reasons: as self-defense, military and law enforcement applications; as competition, physical fitness, mental and spiritual development; as well as entertainment and the preservation of a nation's intangible cultural heritage."
+    },{
+      "type" : "translation",
+      "img":"img/yellow/kick.png",
+      "english":"Kick",
+      "japanese": "Geri",
+      "description":"A kick is a physical strike using the foot, leg, or knee (the latter is also known as a knee strike)."
+    },{
+      "type" : "translation",
+      "img":"img/yellow/school.jpg",
+      "english":"School",
+      "japanese": "Dojo",
+      "description":"Dojo is a Japanese term which literally means \"place of the way\". In the Western World, the term dojo primarily refers to a training place specifically for Japanese martial arts such as aikido, judo, karate, or Ju-Jitsu"
+    }
+  ]
+}]

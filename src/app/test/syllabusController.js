@@ -5,13 +5,11 @@ angular.module("app")
     'TestSyllabus', 
     ['syllabus', 
      'common', 
-     '$scope', 
      '$location', 
      '$rootScope',   
      function (
        syllabus, 
        common, 
-       $scope, 
        $location, 
        $rootScope) {
          

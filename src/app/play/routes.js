@@ -25,7 +25,7 @@ angular.module("app").config(['$stateProvider', '$urlRouterProvider', function (
       url: "/play/syllabus",
       template: require('./syllabus.html'),
       ncyBreadcrumb: {
-        label: '{{current}}',
+        label: 'Selected Belts',
         parent: 'playBelts'
       }
     }).state('playFinish', {

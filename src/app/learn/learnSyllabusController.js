@@ -1,13 +1,11 @@
 import angular from 'angular';
 
-angular.module("app").controller('LearnSyllabus', ['syllabus', 'common', '$scope', '$location', '$q', function (syllabus, common, $scope, $location, $q) {
+angular.module("app").controller('LearnSyllabus', ['syllabus', 'common', '$location', '$q', function (syllabus, common, $location, $q) {
   let vm = this;
   vm.itemHeading  = "";
   vm.item = {};
   vm.next = loadNextItem;
   vm.init = init;
-  
-  $scope.current = "White";   // Scope required for breadcrumbs.
   
   let belts = [];
   let currentBeltData = [];
