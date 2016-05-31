@@ -24,11 +24,11 @@ import '../styles/app.scss';
 const MODULE_NAME = 'app';
 
 angular.module(MODULE_NAME, ['ui.bootstrap', "ui.router", 'ngAnimate', 'ngMaterial', 'ncy-angular-breadcrumb', 'angularytics'])
-  .config(function(AngularyticsProvider) {
+  .config(['AngularyticsProvider', function(AngularyticsProvider) {
     AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
-  }).run(function(Angularytics) {
+  }]).run(['Angularytics', function(Angularytics) {
     Angularytics.init();
-  });
+  }]);
 
 // Local requires
 require('./routes');
