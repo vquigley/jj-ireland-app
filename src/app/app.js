@@ -7,6 +7,7 @@ require('angular-material');
 require('angular-ui-bootstrap');
 require('angular-ui-router');
 require('angular-breadcrumb');
+require('angularytics');
 
 // Other vendor dependencies
 require("font-awesome-webpack");
@@ -22,7 +23,12 @@ import '../styles/app.scss';
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, ['ui.bootstrap', "ui.router", 'ngAnimate', 'ngMaterial', 'ncy-angular-breadcrumb']);
+angular.module(MODULE_NAME, ['ui.bootstrap', "ui.router", 'ngAnimate', 'ngMaterial', 'ncy-angular-breadcrumb', 'angularytics'])
+  .config(function(AngularyticsProvider) {
+    AngularyticsProvider.setEventHandlers(['Console', 'GoogleUniversal']);
+  }).run(function(Angularytics) {
+    Angularytics.init();
+  });
 
 // Local requires
 require('./routes');
