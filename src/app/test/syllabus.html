@@ -4,11 +4,14 @@
   
   <div class="col-md-6 col-sm-6">
     <div class="h2 center-block ">
-      <span ng-hide="vm.item.type === 'translation'">What is this?</span>
+      <span ng-show="!vm.item.type">What is this?</span>
+      <span ng-show="vm.item.type === 'question'">{{vm.item.question}}</span>
       <span ng-show="vm.item.type === 'translation'">What is Japanese for <i>{{vm.item.english}}</i>?</span>
     </div>
     
-    <select name="options" class="col-xs-10 col-sm-10 col-md-4" ng-model="vm.selected">
+    <input type="number" ng-model="vm.guess" ng-show="vm.item.type === 'question'" />
+
+    <select ng-hide="vm.item.type === 'question'" name="options" class="col-xs-10 col-sm-10 col-md-4" ng-model="vm.selected">
       <option value="" disabled selected><i>Select</i></option>
       <option ng-repeat="option in vm.answerOptions" value="{{option}}">{{option}}</option>
     </select>

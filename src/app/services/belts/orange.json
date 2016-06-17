@@ -1,0 +1,100 @@
+[{
+  "title": "Miscellaneous Anatomy",
+  "items" : [
+    {
+      "type":"question",
+      "img":"img/orange/questions/body.jpg",
+      "value":213,
+      "question":"How many bones are there in the human body?",
+      "description":"There are 213 bones in the human body."
+    },
+    {
+      "type":"question",
+      "img":"img/orange/questions/brain.jpg",
+      "value":3,
+      "question":"Approximately how many pounds (lb) does the human brain weigh?",
+      "description":"The average brain weighs 1/50 of the overall body weight (approx. 3lb)."
+    },
+    {
+      "type":"question",
+      "img":"img/orange/questions/skull.jpg",
+      "value":28,
+      "question":"How many bones are there in the human head?",
+      "description":"There are 28 bones in the head"
+    },
+    {
+      "type":"question",
+      "img":"img/orange/questions/spine.jpg",
+      "value":33,
+      "question":"How many bones are there in the human spine?",
+      "description":"There are 33 bones in the spine."
+    },
+    {
+      "type":"question",
+      "img":"img/orange/questions/blood.jpg",
+      "value":8,
+      "question":"How many pints of blood are there in average human body?",
+      "description":"There are 8 pints of blood in average human body."
+    },
+    {
+      "img":"img/orange/questions/clavicle.png",
+      "imgQuestion" : "img/orange/questions/clavicle.png",
+      "value":"Clavicle – Collar bone",
+      "description":"the clavicle or collarbone is a long bone that serves as a strut between the shoulder blade and the sternum or breastbone. There are two clavicles, one on the left and one on the right."
+    },
+    {
+      "img":"img/orange/questions/scapula.png",
+      "imgQuestion" : "img/orange/questions/scapula.png",
+      "value":"Scapula – Shoulder blade",
+      "description":"The scapula or shoulder blade is the bone that connects the humerus (upper arm bone) with the clavicle (collar bone)."
+    }
+  ]
+}, 
+{
+  "title": "Japanese Terminology",
+  "items": [
+    {
+      "type" : "translation",
+      "img":"img/orange/bokken.jpg",
+      "english":"Wooden training sword",
+      "japanese": "Bokken",
+      "description":"A bokken is a Japanese wooden sword used for training. It is usually the size and shape of a katana."
+    },{
+      "type" : "translation",
+      "img":"img/orange/tanto.jpg",
+      "english":"Knife",
+      "japanese": "Tanto",
+      "description":"The tantō is commonly referred to as a knife or dagger. The blade is single or double edged with a length between 15 and 30 cm. The tantō was designed primarily as a stabbing weapon, but the edge can be used for slashing as well."
+    },{
+      "type" : "translation",
+      "img":"img/orange/tonfa.jpg",
+      "english":"Wooden batons/night sticks",
+      "japanese": "Tonfa",
+      "description":"The tonfa also known as tong fa or tuifa, is a melee weapon best known for its role in the armed component of Okinawan martial arts."
+    },{
+      "type" : "translation",
+      "img":"img/orange/nunchaku.jpg",
+      "english":"Rice Flails",
+      "japanese": "Nunchaku",
+      "description":"The nunchaku is a traditional Okinawan martial arts weapon consisting of two sticks connected at one end by a short chain or rope."
+    },{
+      "type" : "translation",
+      "img":"img/orange/bo.png",
+      "english":"Wooden Staff",
+      "japanese": "Bo",
+      "description":"A bō is a very tall and long staff weapon used in Okinawa and feudal Japan. Bō are typically around 1.8 m long and used in Japanese martial arts, in particular bōjutsu."
+    },{
+      "type" : "translation",
+      "img":"img/orange/katana.jpg",
+      "english":"Metal Sword",
+      "japanese": "Katana",
+      "description":"Katana were one of the traditionally made Japanese swords that were used by the samurai of feudal Japan. The katana is characterized by its distinctive appearance: a curved, slender, single-edged blade with a circular or squared guard and long grip to accommodate two hands."
+    },{
+      "type" : "translation",
+      "img":"img/orange/kama.jpeg",
+      "english":"Sickles/threshing blades",
+      "japanese": "Kama",
+      "description":"The kama is a traditional Filipino and Japanese farming implement similar to a sickle used for reaping crops and also employed as a weapon. Before being improvised as a weapon, the kama was widely used throughout Asia to cut crops, mostly rice."
+    }
+  ]
+}]

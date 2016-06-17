@@ -28,6 +28,7 @@ angular.module("app")
   vm.answer = answer;
   vm.answerState = "none";
   vm.next = next;
+  vm.guess = "";
   vm.showAnswer = showAnswer;
   vm.itemIndex = 0;
   
@@ -56,7 +57,7 @@ angular.module("app")
             vm.answers.push(item.english);
             vm.answers.push(item.japanese);
           }
-          else {
+          else if (!item.type) {
             vm.answers.push(item.value); 
           }
         });
@@ -78,6 +79,7 @@ angular.module("app")
   function loadItem() {    
     vm.answerState = "none";
     vm.selected = "";
+    vm.guess = "";
     vm.item = vm.questionData[vm.itemIndex];
   }
   
@@ -89,6 +91,9 @@ angular.module("app")
     if (vm.item.type === "translation") {
       answerTranslation();
     }
+    else if (vm.item.type === "question") {
+      answerQuestion();
+    }
     else {
       answerAnatomy();
     }    
@@ -96,6 +101,15 @@ angular.module("app")
   
   function answerAnatomy (){
     if (vm.selected === vm.item.value) {
+      correctAnswer();
+    }
+    else {
+      wrongAnswer();
+    }
+  }
+
+  function answerQuestion (){
+    if (vm.guess === vm.item.value) {
       correctAnswer();
     }
     else {
@@ -138,6 +152,12 @@ angular.module("app")
     }
     
     vm.answerState='correct'
-    vm.selected = vm.answers[vm.answers.indexOf(answer)];
+
+    if (vm.item.type === "question") {
+      vm.guess = answer;
+    }
+    else {
+      vm.selected = vm.answers[vm.answers.indexOf(answer)];
+    }
   }
 }]);

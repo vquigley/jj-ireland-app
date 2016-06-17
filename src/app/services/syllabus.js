@@ -7,6 +7,7 @@ angular.module("app").factory('syllabus', ['$q', function ($q) {
   service.get = get;
   service.white = white;
   service.yellow = yellow;
+  service.orange = orange;
   
   function supportedBelts() {
     return $q(function(resolve, reject) {
@@ -20,6 +21,11 @@ angular.module("app").factory('syllabus', ['$q', function ($q) {
             name:"Yellow",
             color:"yellow",
             id:"yellow"
+          },
+          {
+            name:"Orange",
+            color:"orange",
+            id:"orange"
           }
         ]
       );
@@ -36,6 +42,10 @@ angular.module("app").factory('syllabus', ['$q', function ($q) {
   
   function yellow() {
     return require('./belts/yellow.json');
+  }
+  
+  function orange() {
+    return require('./belts/orange.json');
   }
   
   return service;

@@ -46,7 +46,7 @@ angular.module("app")
             vm.answerOptions.push(item.english);
             vm.answerOptions.push(item.japanese);
           }
-          else {
+          else if (!item.type) {
             vm.answerOptions.push(item.value); 
           }
         });
@@ -67,6 +67,7 @@ angular.module("app")
   
   function loadItem() {
     vm.selected = "";
+    vm.guess = "";
     vm.item = vm.questionData[vm.itemIndex];
   }
   
@@ -76,24 +77,16 @@ angular.module("app")
   }
   
   function next() {
-    vm.questionData[vm.itemIndex].selected = vm.selected;
+    if ((vm.item.type && vm.item.type === "question")) {
+      vm.questionData[vm.itemIndex].selected = vm.guess;
+    }
+    else {
+      vm.questionData[vm.itemIndex].selected = vm.selected;
+    }
     
     if (++vm.itemIndex >= vm.questionData.length)
       return finish();
       
     loadItem();
-  }
-  
-  function showAnswer() {
-    
-    let answer = ""
-    if (vm.item.type === "translation") {
-      answer = vm.questionData[vm.itemIndex].japanese;
-    }
-    else {
-      answer = vm.questionData[vm.itemIndex].value;
-    }
-    
-    vm.selected = vm.answerOptions[vm.answerOptions.indexOf(answer)];
   }
 }]);
